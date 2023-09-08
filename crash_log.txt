@@ -1,0 +1,17 @@
+[194430108198721300] [192.168.0.140] [720.341] [system] [info] Memory Usage - DDR: 49.19 / 337.18 MiB, CMX: 2.41 / 2.50 MiB, LeonOS Heap: 65.67 / 80.03 MiB, LeonRT Heap: 4.99 / 41.06 MiB
+[194430108198721300] [192.168.0.140] [720.341] [system] [info] Temperatures - Average: 53.71C, CSS: 54.86C, MSS 52.68C, UPA: 53.77C, DSS: 53.55C
+[194430108198721300] [192.168.0.140] [720.341] [system] [info] Cpu Usage - LeonOS 78.98%, LeonRT: 21.74%
+[194430108198721300] [192.168.0.140] [721.345] [system] [info] Memory Usage - DDR: 49.19 / 337.18 MiB, CMX: 2.41 / 2.50 MiB, LeonOS Heap: 65.67 / 80.03 MiB, LeonRT Heap: 4.99 / 41.06 MiB
+[194430108198721300] [192.168.0.140] [721.345] [system] [info] Temperatures - Average: 53.71C, CSS: 55.07C, MSS 53.12C, UPA: 53.99C, DSS: 52.68C
+[194430108198721300] [192.168.0.140] [721.345] [system] [info] Cpu Usage - LeonOS 72.86%, LeonRT: 19.11%
+[194430108198721300] [192.168.0.140] [1694158241.791] [host] [warning] Monitor thread (device: 194430108198721300 [192.168.0.140]) - ping was missed, closing the device connection
+[194430108198721300] [192.168.0.140] [1694158243.792] [host] [debug] Timesync thread exception caught: Couldn't write data to stream: '__timesync' (X_LINK_ERROR)
+[194430108198721300] [192.168.0.140] [1694158243.792] [host] [debug] Log thread exception caught: Couldn't read data from stream: '__log' (X_LINK_ERROR)
+Traceback (most recent call last):
+  File "camera_test.py", line 140, in <module>
+    camera.get_frame()
+  File "camera_test.py", line 125, in get_frame
+    return self.queue.get().getCvFrame()
+RuntimeError: Communication exception - possible device error/misconfiguration. Original message 'Couldn't read data from stream: 'right' (X_LINK_ERROR)'
+[194430108198721300] [192.168.0.140] [1694158244.008] [host] [debug] Device about to be closed...
+[194430108198721300] [192.168.0.140] [1694158245.792] [host] [debug] Device closed, 1783
